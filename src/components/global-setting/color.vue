@@ -5,17 +5,17 @@
         <sketch-picker :value="themeColor" @input="handleColorChange" />
       </template>
 
-      <div :class="$style.input">
-        <div :class="$style.color" :style="{ backgroundColor: themeColor }" />
+      <div class="input">
+        <div class="color" :style="{ backgroundColor: themeColor }" />
         <span>{{ themeColor }}</span>
       </div>
     </a-trigger>
 
-    <ul :class="$style.ul">
+    <ul class="ul">
       <li
         v-for="(item, index) in colorList"
         :key="index"
-        :class="$style.li"
+        class="li"
         :style="{ backgroundColor: item }"
       />
     </ul>
@@ -80,7 +80,7 @@
   });
 </script>
 
-<style module lang="less">
+<style scoped lang="less">
   .input {
     display: flex;
     width: 100%;
