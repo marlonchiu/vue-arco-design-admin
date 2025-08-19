@@ -75,7 +75,6 @@
       appStore.globalSettings &&
       !['#165DFF', '#165dff'].includes(appStore.themeColor)
     ) {
-      console.log(appStore.themeColor);
       handleColorChange(appStore.themeColor);
     }
   });
