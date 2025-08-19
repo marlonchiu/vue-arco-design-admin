@@ -10,6 +10,9 @@
         @input-change="handleChange"
       />
     </div>
+    <!-- 自定义 -->
+    <slot></slot>
+    <a-divider />
   </div>
 </template>
 

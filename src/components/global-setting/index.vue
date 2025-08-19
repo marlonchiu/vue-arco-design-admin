@@ -15,7 +15,13 @@
     @ok="copySettings"
     @cancel="cancel"
   >
-    <template #title> {{ $t('settings.title') }} </template>
+    <template #title>
+      <icon-settings />
+      {{ $t('settings.title') }}
+    </template>
+    <Block :title="$t('settings.themeColor')">
+      <Color />
+    </Block>
     <Block :options="contentOpts" :title="$t('settings.content')" />
     <Block :options="othersOpts" :title="$t('settings.otherSettings')" />
     <a-alert>{{ $t('settings.alertContent') }}</a-alert>
@@ -29,6 +35,7 @@
   import { useClipboard } from '@vueuse/core';
   import { useAppStore } from '@/store';
   import Block from './block.vue';
+  import Color from './color.vue';
 
   const emit = defineEmits(['cancel']);
 
