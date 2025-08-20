@@ -8,7 +8,7 @@
 pnpm create arco-pro@lates
 ```
 
-## 提交失败
+## 提交失败临时处理
 
 ```bash
 git commit -m "feat: Add Vue Arco Design Admin project files" --no-verify
